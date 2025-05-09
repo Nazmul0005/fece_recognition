@@ -1,9 +1,14 @@
 import requests
 import json
-import os
 
-API_KEY = ''      # Your Face++ API key
-API_SECRET = ''  # Your Face++ API secret
+
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")      # Your Face++ API key
+API_SECRET = os.getenv("API_SECRET")
+
 
 # Add this function to handle faceset token persistence
 def load_or_create_faceset():
