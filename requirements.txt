@@ -2,3 +2,6 @@ requests
 python-dotenv
 streamlit
 Pillow
+fastapi
+uvicorn
+python-multipart
